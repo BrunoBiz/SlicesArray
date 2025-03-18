@@ -3,8 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var productNames [4]string
-	productNames = [4]string{"A book"}
+	prices := []float64{1.99, 1.29}
+	fmt.Println(prices[1])
+
+	prices = append(prices, 5.99)
+	fmt.Println(prices)
+
+}
+
+/* func main() {
+	var productNames [4]string = [4]string{"A book"}
 	productNames[2] = "Carpet"
 
 	prices := [4]float64{1.99, 2.99, 3.99, 4.99}
@@ -25,3 +33,4 @@ func main() {
 	fmt.Println(prices)
 	fmt.Println(len(featuredPrices), cap(featuredPrices))
 }
+*/
